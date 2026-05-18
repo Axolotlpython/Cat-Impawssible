@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 510571891}
   - component: {fileID: 510571890}
   - component: {fileID: 510571892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 510571889}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.96, y: 0.29, z: 0}
+  m_LocalPosition: {x: 11.96, y: -0.37, z: 0}
   m_LocalScale: {x: 1.8166509, y: 0.4667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 546689413}
   - component: {fileID: 546689412}
   - component: {fileID: 546689411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trash Can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 653159696}
   - component: {fileID: 653159698}
   - component: {fileID: 653159697}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Shelf 2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 757248719}
   - component: {fileID: 757248718}
   - component: {fileID: 757248717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Alley Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 886395689}
   - component: {fileID: 886395688}
   - component: {fileID: 886395687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ledge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +898,7 @@ Transform:
   m_GameObject: {fileID: 886395686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.9659, y: 2.47, z: 0}
+  m_LocalPosition: {x: 31.9659, y: 0.8, z: 0}
   m_LocalScale: {x: 3.17366, y: 0.81177795, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 892693186}
   - component: {fileID: 892693185}
   - component: {fileID: 892693187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1046,7 +1046,7 @@ GameObject:
   - component: {fileID: 1265957412}
   - component: {fileID: 1265957411}
   - component: {fileID: 1265957410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ledge (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,7 +1159,7 @@ Transform:
   m_GameObject: {fileID: 1265957409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.2639, y: 0.47, z: 0}
+  m_LocalPosition: {x: 38.2639, y: -1.2, z: 0}
   m_LocalScale: {x: 3.3494575, y: 0.81177795, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 1338825916}
   - component: {fileID: 1338825918}
   - component: {fileID: 1338825917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shelf 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1306,7 +1306,7 @@ GameObject:
   - component: {fileID: 1342251078}
   - component: {fileID: 1342251077}
   - component: {fileID: 1342251079}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1566,7 @@ GameObject:
   - component: {fileID: 1574382011}
   - component: {fileID: 1574382010}
   - component: {fileID: 1574382009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ledge (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1679,7 +1679,7 @@ Transform:
   m_GameObject: {fileID: 1574382008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.4217, y: 2.01, z: 0}
+  m_LocalPosition: {x: 44.4217, y: 0.33999997, z: 0}
   m_LocalScale: {x: 3.138388, y: 0.81177795, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1696,6 +1696,7 @@ GameObject:
   - component: {fileID: 1812516243}
   - component: {fileID: 1812516242}
   - component: {fileID: 1812516241}
+  - component: {fileID: 1812516244}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1746,7 +1747,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.8220081
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1771,12 +1772,27 @@ Transform:
   m_GameObject: {fileID: 1812516240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -6.61, y: -2.95, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1812516244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812516240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395fc9cf5fdb6524d8ed0bc8a8c64315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1893420896}
+  smoothTime: 0.15
+  offset: {x: 0, y: 1, z: -10}
 --- !u!1 &1848002799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,7 +1804,7 @@ GameObject:
   - component: {fileID: 1848002801}
   - component: {fileID: 1848002800}
   - component: {fileID: 1848002802}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Counter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,6 +1923,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1882648810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1882648811}
+  m_Layer: 3
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1882648811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882648810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.062, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1893420896}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1893420894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,10 +1964,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1893420896}
   - component: {fileID: 1893420895}
-  - component: {fileID: 1893420897}
+  - component: {fileID: 1893420899}
+  - component: {fileID: 1893420898}
+  - component: {fileID: 1893420900}
   m_Layer: 0
-  m_Name: Spawn
-  m_TagString: Untagged
+  m_Name: Jack
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1966,8 +2015,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: bb010325c16c14342a17953803d30a07, type: 3}
-  m_Color: {r: 1, g: 0.50675887, b: 0, a: 1}
+  m_Sprite: {fileID: -2048403245, guid: 2112125927b5a5c4781bcf6c0b13ef77, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1986,13 +2035,60 @@ Transform:
   m_GameObject: {fileID: 1893420894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.69, y: -3.09, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.864, y: -3.171, z: 0}
+  m_LocalScale: {x: -13.708382, y: 11.888144, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1882648811}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1893420897
+--- !u!50 &1893420898
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893420894}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 3
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!114 &1893420899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893420894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55e32126fc84e5478e8234510e2ddd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  jumpForce: 14
+  groundCheck: {fileID: 1882648811}
+  groundCheckRadius: 0.15
+  goundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!61 &1893420900
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2024,18 +2120,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005117655, y: -0.018687196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.13, y: 0.12}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.106117666, y: 0.0826256}
   m_EdgeRadius: 0
 --- !u!1 &1923311854
 GameObject:
@@ -2048,7 +2144,7 @@ GameObject:
   - component: {fileID: 1923311857}
   - component: {fileID: 1923311856}
   - component: {fileID: 1923311855}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Kitchen Floor '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2178,7 +2274,7 @@ GameObject:
   - component: {fileID: 1963318307}
   - component: {fileID: 1963318306}
   - component: {fileID: 1963318305}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ledge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2291,7 +2387,7 @@ Transform:
   m_GameObject: {fileID: 1963318304}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.3715, y: 0.54, z: 0}
+  m_LocalPosition: {x: 25.3715, y: -1.1299999, z: 0}
   m_LocalScale: {x: 3.3847296, y: 0.81177795, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
