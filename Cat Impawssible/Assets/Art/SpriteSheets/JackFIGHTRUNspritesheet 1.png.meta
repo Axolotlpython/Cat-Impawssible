@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e90c50dd65da82f4d9f0724600dc453f
+guid: 0bed6ad5271c8524694d2e1b547c2a67
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JackFIGHTRUNspritesheet_0
+      name: JackFIGHTRUNspritesheet 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
+        y: 0
         width: 20
-        height: 10
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 607b574c4a50e3b44aedd0c710880aec
-      internalID: 38074767
+      spriteID: 38f8cd3dd8587924f8b0e8c9e95b6321
+      internalID: 2077789015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackFIGHTRUNspritesheet_1
+      name: JackFIGHTRUNspritesheet 1_1
       rect:
         serializedVersion: 2
         x: 20
-        y: 1
+        y: 0
         width: 20
-        height: 10
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5086467174b7c941ae64d117e9cfcb1
-      internalID: -1235645524
+      spriteID: 06ef5515379df3a438cfa643ef142450
+      internalID: 1241993242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackFIGHTRUNspritesheet_2
+      name: JackFIGHTRUNspritesheet 1_2
       rect:
         serializedVersion: 2
         x: 40
-        y: 1
+        y: 0
         width: 20
-        height: 10
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d2a0ad21abe8424a944ff13a6249bd5
-      internalID: 1750550930
+      spriteID: c0c4bcb9035e3804388162f7fd2a3a1d
+      internalID: -315405204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JackFIGHTRUNspritesheet_3
+      name: JackFIGHTRUNspritesheet 1_3
       rect:
         serializedVersion: 2
         x: 60
-        y: 1
+        y: 0
         width: 20
-        height: 10
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0743baf26d5878f479f18e026cc6d89d
-      internalID: -845964509
+      spriteID: f4ee5b357b984a64c96319ee8ffcb776
+      internalID: -130985440
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JackFIGHTRUNspritesheet_0: 38074767
-      JackFIGHTRUNspritesheet_1: -1235645524
-      JackFIGHTRUNspritesheet_2: 1750550930
-      JackFIGHTRUNspritesheet_3: -845964509
+      JackFIGHTRUNspritesheet 1_0: 2077789015
+      JackFIGHTRUNspritesheet 1_1: 1241993242
+      JackFIGHTRUNspritesheet 1_2: -315405204
+      JackFIGHTRUNspritesheet 1_3: -130985440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

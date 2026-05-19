@@ -19,9 +19,13 @@ public class PlayerMovemnt : MonoBehaviour
 
     AudioSource audioSource;
 
+    [SerializeField] private Animator animator;
+
+    private SpriteRenderer spriteRenderer;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+       spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Awake()
@@ -43,8 +47,39 @@ public class PlayerMovemnt : MonoBehaviour
         {
             Jump();
             audioSource.Play();
+            
+        }
+        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            animator.SetBool("Sit", true);
+            animator.SetBool("IsRunning", false);
+        }
+       /* else
+        {
+            animator.SetBool("Sit", false);
+        }*/
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            animator.SetBool("IsRunning", true);
+            animator.SetBool("Sit", false);
+            spriteRenderer.flipX = true;
+        }
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            animator.SetBool("IsRunning", true);
+            animator.SetBool("Sit", false);
+            spriteRenderer.flipX = false;
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+            
         }
     }
+
+
 
     void FixedUpdate()
     {
@@ -63,4 +98,5 @@ public class PlayerMovemnt : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
+
 }
