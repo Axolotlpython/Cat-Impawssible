@@ -42,10 +42,22 @@ public class PlayerMovemnt : MonoBehaviour
             groundCheckRadius,
             goundLayer
             );
+        if ( isGrounded == true)
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("EndJump", false);
+        }
+
+        if (isGrounded == false)
+        {
+            animator.SetBool("EndJump", true);
+            animator.SetBool("IsRunning", false);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
+            animator.SetBool("Jump", true);
             audioSource.Play();
             
         }
@@ -77,6 +89,22 @@ public class PlayerMovemnt : MonoBehaviour
             animator.SetBool("IsRunning", false);
             
         }
+        if (isGrounded == false)
+        {
+            animator.SetBool("EndJump", true);
+            animator.SetBool("IsRunning", false);
+        }
+        if (spriteRenderer.flipX == true)
+        {
+            gameObject.CompareTag("Yarn");
+            spriteRenderer.flipX = true;
+        }
+    }
+
+    public void OnJumpEnd()
+    {
+        animator.SetBool("Jump", false );
+        animator.SetBool("EndJump", true );
     }
 
 
