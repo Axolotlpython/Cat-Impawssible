@@ -21,6 +21,10 @@ public class PlayerMovemnt : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
+    public GameObject bulletPrefab;
+    public UnityEngine.Transform _bulletSpawnPoint;
+
+
     private SpriteRenderer spriteRenderer;
     void Start()
     {
@@ -35,6 +39,19 @@ public class PlayerMovemnt : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject bullet = Instantiate(bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+
+            // Check if the parent is flipped and adjust the direction
+            float directionMultiplier = spriteRenderer.flipX ? -1f : 1f;
+            Vector2 shootDir = _bulletSpawnPoint.right * directionMultiplier;
+
+            rb.AddForce(shootDir * 1000);
+
+
+        }
         moveInput = Input.GetAxisRaw("Horizontal");
 
         isGrounded = Physics2D.OverlapCircle(
