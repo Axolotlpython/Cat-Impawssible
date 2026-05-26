@@ -41,14 +41,28 @@ public class PlayerMovemnt : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject bullet = Instantiate(bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
+            /*GameObject bullet = Instantiate(bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
             // Check if the parent is flipped and adjust the direction
             float directionMultiplier = spriteRenderer.flipX ? -1f : 1f;
             Vector2 shootDir = _bulletSpawnPoint.right * directionMultiplier;
 
-            rb.AddForce(shootDir * 1000);
+            rb.AddForce(shootDir * 1000);*/
+            Vector3 mouseScreenPos = Input.mousePosition;
+            mouseScreenPos.z = 0f;
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+            Vector2 direction = (Vector2)(mouseWorldPos - _bulletSpawnPoint.position);
+            direction.Normalize();
+
+            GameObject bullet = Instantiate(bulletPrefab, _bulletSpawnPoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+
+            if (rb != null)
+            {
+                rb.AddForce(direction * 1000f);
+            }
+
 
 
         }
