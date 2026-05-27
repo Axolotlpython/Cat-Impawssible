@@ -14,8 +14,9 @@ public class RatDeath : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Yarn"))
         {
-            Destroy(gameObject);
             audioSource.Play();
+            Destroy(gameObject);
+
         }
     }
 }
