@@ -8,6 +8,8 @@ TagManager:
   - YarnGone
   - RatTurn
   - Chesse
+  - GameManager
+  - Cheese
   layers:
   - Default
   - TransparentFX
@@ -47,4 +49,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3375267001
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 2520519837
     locked: 0

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5983037232588185405}
   - component: {fileID: 6983021679744019606}
   - component: {fileID: 4953967889266481950}
+  - component: {fileID: -8305686269946238521}
   m_Layer: 0
   m_Name: Chesse
-  m_TagString: Untagged
+  m_TagString: Cheese
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,3 +181,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8305686269946238521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895126188357365197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9012dc7289fd934080b64c7ac988955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2

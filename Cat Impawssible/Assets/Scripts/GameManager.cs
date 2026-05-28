@@ -2,13 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
+    [Header("Chesse Settings")]
+    public int cheeseCollected = 0;
+    public int cheeseNeededToWin = 5;
+
     [Header("UI")]
-    public TMP_Text chessetext;
+    public TMP_Text cheeseText;
     public GameObject winPanel;
     public GameObject losePanel;
+
+    [Header("LevelBlocks")]
+    public GameObject window;
+    public GameObject sewer;
+    public GameObject pipe;
 
     private bool gameOver = false;
 
@@ -18,22 +30,74 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        UpdateChesseUI()
-            if (winPanel != null)
+        UpdateCheeseUI();
+        if (winPanel != null)
         {
-            winPanel .SetActive(false);
+            winPanel.SetActive(false);
         }
-            if (losePanel != null)
+        if (losePanel != null)
         {
-            losePanel .SetActive(false);
+            losePanel.SetActive(false);
         }
     }
 
-    public void AddChesse(int amount)
+    public void AddCheese(int amount)
     {
         if (gameOver) return;
 
-        chesseCollected += amount;
-        Update
+        cheeseCollected += amount;
+        UpdateCheeseUI();
+
+        if (cheeseCollected >= 4 && window != null)
+        {
+            Destroy(window);
+        }
+
+        if (cheeseCollected >= 16  && sewer != null)
+        {
+            Destroy(sewer);
+        }
+
+        if (cheeseCollected >= 32 && pipe != null)
+        {
+            Destroy(pipe);
+        }
+    }
+
+    void UpdateCheeseUI()
+    {
+        cheeseText.text = "Score: " + cheeseCollected + " / " + cheeseNeededToWin;
+    }
+
+    public bool HasEnoughCheese()
+    {
+        return cheeseCollected >= cheeseNeededToWin;
+    }
+
+
+
+    public void WinGame()
+    {
+        gameOver = true;
+        winPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void LoseGame()
+    {
+        gameOver = true;
+        losePanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
