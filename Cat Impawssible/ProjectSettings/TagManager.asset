@@ -47,8 +47,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Window
+    uniqueID: 2112897595
+    locked: 0
+  - name: platfforms
+    uniqueID: 3753816805
+    locked: 0
   - name: Player
     uniqueID: 3375267001
+    locked: 0
+  - name: Score +
+    uniqueID: 221584925
     locked: 0
   - name: New Layer 2
     uniqueID: 2520519837
