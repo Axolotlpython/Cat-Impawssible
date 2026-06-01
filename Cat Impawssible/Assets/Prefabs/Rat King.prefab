@@ -18,8 +18,8 @@ GameObject:
   - component: {fileID: -6358393477409340886}
   - component: {fileID: -7556842556751879313}
   m_Layer: 0
-  m_Name: Rat
-  m_TagString: Rat
+  m_Name: Rat King
+  m_TagString: Rat King
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 4348711650468078098}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.01, y: 1.94, z: 0}
-  m_LocalScale: {x: -4.136048, y: 4.987745, z: 1}
+  m_LocalPosition: {x: 12.4372, y: 2.1927, z: 0}
+  m_LocalScale: {x: -6.57796, y: 8.356344, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2991770729396976964}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 221584925
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -831481589, guid: d0111511d83c67d4796ecf20c339ccfa, type: 3}
+  m_Sprite: {fileID: 47992236, guid: 05c2d7fba3e08ed4492c0522f6d34035, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0010789037, y: 0.014220219}
+  m_Offset: {x: -0.004127085, y: 0.007517239}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35639405, y: 0.12214454}
+  m_Size: {x: 0.42578876, y: 0.10873859}
   m_EdgeRadius: 0
 --- !u!50 &7559542352643603317
 Rigidbody2D:
@@ -176,9 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fa4a34fc70c89458ea28a88fd72a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   rayDistance: 1
-  chaseSpeed: 5
+  chaseSpeed: 7
   groundDetection: {fileID: 2991770729396976964}
   groundLayer:
     serializedVersion: 2
@@ -193,7 +193,7 @@ Animator:
   m_GameObject: {fileID: 4348711650468078098}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 74926ccd4d5563b42a69530de6f25a69, type: 2}
+  m_Controller: {fileID: 9100000, guid: 954561e1c75a89c48894a015a406209f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a899e3c0f0441944393d346bb21e59e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 2
 --- !u!1 &5981543669467395775
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,9 @@ TagManager:
   - Chesse
   - GameManager
   - Cheese
+  - Rat
+  - Rat King
+  - PlayerFollow
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [Header("Chesse Settings")]
     public int cheeseCollected = 0;
     public int cheeseNeededToWin = 5;
+    public int pointsleft = 0;
 
     [Header("UI")]
     public TMP_Text cheeseText;
@@ -48,17 +49,26 @@ public class GameManager : MonoBehaviour
         cheeseCollected += amount;
         UpdateCheeseUI();
 
+        if (cheeseCollected <= 4)
+        {
+            pointsleft = 18;
+        }
+
         if (cheeseCollected >= 4 && window != null)
         {
             Destroy(window);
         }
 
-        if (cheeseCollected >= 16  && sewer != null)
+        if (cheeseCollected >= 18  && sewer != null)
         {
             Destroy(sewer);
         }
+        if (cheeseCollected == 18)
+        {
+            pointsleft = 42;
+        }
 
-        if (cheeseCollected >= 32 && pipe != null)
+        if (cheeseCollected >= 42 && pipe != null)
         {
             Destroy(pipe);
         }
@@ -66,7 +76,7 @@ public class GameManager : MonoBehaviour
 
     void UpdateCheeseUI()
     {
-        cheeseText.text = "Score: " + cheeseCollected + " / " + cheeseNeededToWin;
+        cheeseText.text = "Score: " + cheeseCollected + " / " + pointsleft;
     }
 
     public bool HasEnoughCheese()

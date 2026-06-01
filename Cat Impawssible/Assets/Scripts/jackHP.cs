@@ -27,7 +27,14 @@ public class jackHP : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        TakeDamage(1);
+        if (collision.gameObject.CompareTag("Rat"))
+        {
+            TakeDamage(5);
+        }
+        if (collision.gameObject.CompareTag("Rat King"))
+        {
+            TakeDamage(10);
+        }
     }
 
 }
