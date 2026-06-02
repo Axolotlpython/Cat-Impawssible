@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [Header("Chesse Settings")]
     public int cheeseCollected = 0;
     public int cheeseNeededToWin = 5;
-    public int pointsleft = 0;
+    public int pointsleft;
 
     [Header("UI")]
     public TMP_Text cheeseText;
@@ -49,28 +49,52 @@ public class GameManager : MonoBehaviour
         cheeseCollected += amount;
         UpdateCheeseUI();
 
-        if (cheeseCollected <= 4)
-        {
-            pointsleft = 18;
-        }
+        /* if (cheeseCollected >= 5)
+         {
+             pointsleft = 19;
+         }*/
 
-        if (cheeseCollected >= 4 && window != null)
+        /*if (cheeseCollected >= 5 && window != null)
         {
             Destroy(window);
-        }
+            pointsleft = 19;
+        }*/
+        /* if (cheeseCollected >= 5)
+         {
+             if (window != null)
+             {
+                 Destroy(window);
+                 pointsleft = 19;
+             }
+         }
 
-        if (cheeseCollected >= 18  && sewer != null)
-        {
-            Destroy(sewer);
-        }
-        if (cheeseCollected == 18)
-        {
-            pointsleft = 42;
-        }
+         if (cheeseCollected >= 19  && sewer != null)
+         {
+             Destroy(sewer);
+         }
+         if (cheeseCollected == 19)
+         {
+             pointsleft = 43;
+         }
 
-        if (cheeseCollected >= 42 && pipe != null)
+         if (cheeseCollected >= 43 && pipe != null)
+         {
+             Destroy(pipe);
+         }*/
+        if (cheeseCollected >= 43)
         {
-            Destroy(pipe);
+            if (pipe != null) Destroy(pipe);
+         
+        }
+        else if (cheeseCollected >= 19)
+        {
+            if (sewer != null) Destroy(sewer);
+            pointsleft = 43;
+        }
+        else if (cheeseCollected >= 5)
+        {
+            if (window != null) Destroy(window);
+            pointsleft = 19;
         }
     }
 

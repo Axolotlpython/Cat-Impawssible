@@ -179,10 +179,14 @@ MonoBehaviour:
   speed: 2
   rayDistance: 1
   chaseSpeed: 5
+  JumpForce: 10
   groundDetection: {fileID: 2991770729396976964}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  ceilingCheckDistance: 1
+  jumpyDelay: 1
+  jumpTimer: 1
 --- !u!95 &9095462683573588927
 Animator:
   serializedVersion: 5

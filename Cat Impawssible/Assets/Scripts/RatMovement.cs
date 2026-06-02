@@ -16,15 +16,22 @@ public class RatMovement : MonoBehaviour
 
     public Transform groundDetection;
     public LayerMask groundLayer;
+    public float ceilingCheckDistance = 1f;
 
     private Rigidbody2D rb;
 
+    public float jumpyDelay = 1f;
+    public float jumpTimer;
+    private bool isPerparingToJump = false;
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
+        RaycastHit2D groundCheck = Physics2D.Raycast(groundDetection.position, Vector2.down, rayDistance, groundLayer);
+        bool isGrounded = groundCheck.collider != null;
+
         if (isChasing && player != null)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, chaseSpeed * Time.deltaTime);
@@ -37,12 +44,34 @@ public class RatMovement : MonoBehaviour
             {
                 Flip();
             }
+            Vector2 dirVector = movingRight ? Vector2.right : Vector2.left;
+            Vector2 jumpDir = (dirVector + Vector2.up).normalized; // Shoots up and forward
+            RaycastHit2D jumpHit = Physics2D.Raycast(groundDetection.position, jumpDir, rayDistance, groundLayer);
 
-            RaycastHit2D hitInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, rayDistance, groundLayer);
-            if (hitInfo.collider == false && player.position.y > transform.position.y)
+
+
+            if (jumpHit.collider != null && player.position.y > transform.position.y && isGrounded)
             {
-                // Jump to get on the higher object
-                rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+
+               if (!isPerparingToJump)
+                {
+                    isPerparingToJump = true;
+                    jumpTimer = jumpyDelay;
+                }
+               else
+                {
+                    jumpTimer -= Time.deltaTime;
+                    if (jumpTimer < 0)
+                    {
+                        rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+                        isPerparingToJump = false;
+                    }
+                }
+
+            }
+            else
+            {
+                isPerparingToJump = false;
             }
         }
 
@@ -56,6 +85,7 @@ public class RatMovement : MonoBehaviour
             {
                 Flip();
             }
+            isPerparingToJump = false;
         }
 
         /*if (groundInfo.collider == false)
