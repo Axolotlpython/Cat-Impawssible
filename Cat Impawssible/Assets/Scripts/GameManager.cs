@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public GameObject sewer;
     public GameObject pipe;
 
+
+    public GameObject Jack;
+
     private bool gameOver = false;
 
     void Awake()
@@ -114,14 +117,14 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         winPanel.SetActive(true);
-        Time.timeScale = 0f;
     }
 
     public void LoseGame()
     {
         gameOver = true;
         losePanel.SetActive(true);
-        Time.timeScale = 0f;
+        
+
     }
 
     public void RestartLevel()
