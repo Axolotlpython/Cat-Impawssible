@@ -5,19 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public string levelName;
+    public GameObject optionsPanel;
 
-    public void StartGame()
+    public void PlayGame()
     {
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene("Cat Impawssible");
     }
 
-    public void RestartGame()
+    public void OpenOptions()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        optionsPanel.SetActive(true);
     }
 
-    public void ExitGame()
+    public void CloseOptions()
+    {
+        optionsPanel.SetActive(false);
+    }
+
+    public void QuitGame()
     {
         Application.Quit();
     }

@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OptionsManager : MonoBehaviour
 {
-    public Slider masterSlider;
+    public Slider masterslider;
     public Toggle fullscreenToggle;
 
     void Start()
     {
-        masterSlider.value = PlayerPrefs.GetFloat("MasterVol", 1f);
+        masterslider.value = PlayerPrefs.GetFloat("MasterVol", 1f);
         fullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
     }
 
@@ -27,7 +28,6 @@ public class OptionsManager : MonoBehaviour
         PlayerPrefs.SetInt("Fullscreen", isFS ? 1 : 0);
         PlayerPrefs.Save();
     }
-
 
     public void CloseOptions()
     {
