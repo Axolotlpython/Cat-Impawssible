@@ -12,6 +12,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Cat Impawssible");
     }
 
+    public void Back()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
     public void OpenOptions()
     {
         optionsPanel.SetActive(true);
