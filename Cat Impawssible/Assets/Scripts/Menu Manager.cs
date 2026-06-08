@@ -9,6 +9,8 @@ public class MenuManager : MonoBehaviour
     public GameObject creditspanel;
     public GameObject Pausepenel;
     public GameObject helppanel;
+    public GameObject lore;
+    public GameObject AHHH;
 
     public void PlayGame()
     {
@@ -18,6 +20,28 @@ public class MenuManager : MonoBehaviour
     public void Back()
     {
         SceneManager.LoadScene("Title");
+        Time.timeScale = 1f;
+    }
+
+    public void OpenAHHH()
+    {
+        AHHH.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void CloseAHHH()
+    {
+        AHHH.SetActive(false);
+        Time.timeScale = 1f;
+    }
+    public void OpenLore()
+    {
+        lore.SetActive(true);
+    }
+
+    public void CloseLore()
+    {
+        lore.SetActive(false);
     }
 
     public void OpenHelp()
