@@ -35,12 +35,15 @@ public class MenuManager : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape))
         {
             Pausepenel.SetActive(true);
+            Time.timeScale = 0f;
+
         }
     }
 
     public void BackToGame()
     {
         Pausepenel.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void OpenOptions()

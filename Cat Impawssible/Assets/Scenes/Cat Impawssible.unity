@@ -921,11 +921,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Saige - Project Lead/Head, programer, artist/animator (All Jack art, All
-    rat art, All backgounds)
+    rat art, All backgounds, All animations)
 
 
-    Jesse - Sound/Level/ Game/story designer, artist
-    (platforms, oven, floors, trash can/trash, Kitchen countertop, fridge)'
+    Jesse - Sound/Level/ Game/story
+    designer, artist (platforms, oven, floors, trash can/trash, Kitchen countertop,
+    fridge)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
